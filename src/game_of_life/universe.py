@@ -40,7 +40,8 @@ class Universe:
         return self.grid
 
     def set_grid(self,grid):
-        self.grid = grid
+        if self.N == grid.shape[0]:
+            self.grid = grid
 
     def set_grid_value(self,x,y,value):
         pass
